@@ -23,7 +23,8 @@ addons:
       # - libasan1
       # - libasan2
       # - libubsan0
-      - clang-10
+      - gcc-6
+      - g++-6
       - llvm
 script:
   - mkdir build
