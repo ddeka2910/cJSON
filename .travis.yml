@@ -9,10 +9,10 @@ env:
   matrix:
     - VALGRIND=On SANITIZERS=Off
     - VALGRIND=Off SANITIZERS=Off
-    - VALGRIND=Off SANITIZERS=Off
+    - VALGRIND=Off SANITIZERS=ON
 compiler:
   - gcc
-  - clang
+  #- clang
 addons:
   apt:
     packages:
