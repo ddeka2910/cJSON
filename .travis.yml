@@ -21,7 +21,7 @@ addons:
       - valgrind
       - libasan4
       # - lib32asan4
-      # currently not supported on travis:
+      # currently not supported on travis-ci:
       # - libasan1
       # - libasan2
       # - libubsan0
