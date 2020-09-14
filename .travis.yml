@@ -27,6 +27,7 @@ addons:
 script:
   - mkdir build
   - cd build
+  - sudo apt-get update  
   - sudo apt install clang  
   - cmake .. -DENABLE_CJSON_UTILS=On -DENABLE_VALGRIND="${VALGRIND}" -DENABLE_SAFE_STACK="${VALGRIND}" -DENABLE_SANITIZERS="${SANITIZERS}"
   - make
