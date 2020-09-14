@@ -28,7 +28,7 @@ script:
   - mkdir build
   - cd build
   - sudo apt-get update  
-  - sudo apt install clang  
+  - sudo apt-get install -y clang-6.0  
   - cmake .. -DENABLE_CJSON_UTILS=On -DENABLE_VALGRIND="${VALGRIND}" -DENABLE_SAFE_STACK="${VALGRIND}" -DENABLE_SANITIZERS="${SANITIZERS}"
   - make
   - make test CTEST_OUTPUT_ON_FAILURE=On
