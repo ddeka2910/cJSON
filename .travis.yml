@@ -9,7 +9,7 @@ env:
   matrix:
     - VALGRIND=On SANITIZERS=Off
     - VALGRIND=Off SANITIZERS=Off
-    - VALGRIND=Off SANITIZERS=On
+    - VALGRIND=Off SANITIZERS=Off
 compiler:
   - gcc
   - clang
@@ -23,8 +23,6 @@ addons:
       # - libasan1
       # - libasan2
       # - libubsan0
-      - gcc-6
-      - g++-6
       - llvm
 script:
   - mkdir build
