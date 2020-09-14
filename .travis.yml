@@ -27,6 +27,8 @@ addons:
 script:
   - mkdir build
   - cd build
+  - wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+  - sudo apt-add-repository "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-6.0 main"  
   - sudo apt-get update  
   - sudo apt-get install -y clang-6.0  
   - cmake .. -DENABLE_CJSON_UTILS=On -DENABLE_VALGRIND="${VALGRIND}" -DENABLE_SAFE_STACK="${VALGRIND}" -DENABLE_SANITIZERS="${SANITIZERS}"
