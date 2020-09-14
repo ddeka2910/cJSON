@@ -23,7 +23,7 @@ addons:
       # - libasan1
       # - libasan2
       # - libubsan0
-      - llvm
+      # - llvm
 script:
   - mkdir build
   - cd build
