@@ -17,8 +17,8 @@ addons:
   apt:
     packages:
       - valgrind
-      - libasan0
-      # - lib32asan0
+      - libasan4
+      - lib32asan4
       # currently not supported on travis:
       # - libasan1
       # - libasan2
