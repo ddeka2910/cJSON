@@ -6,8 +6,6 @@ arch:
 
 language: c
 env:
-    - CC=clang-10
-    - CXX=clang++-10    
   matrix:
     - VALGRIND=On SANITIZERS=Off
     - VALGRIND=Off SANITIZERS=Off
